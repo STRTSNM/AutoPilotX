@@ -1,3 +1,6 @@
+![alt text](https://raw.githubusercontent.com/STRTSNM/AutoPilotX/main/autopilotx-high-resolution-logo-transparent.png
+)
+
 # AutopilotX
 
 This project provides a user-friendly, drag-and-drop interface to define and execute automation tasks. Users can craft automation flows and save and load them for future execution.
