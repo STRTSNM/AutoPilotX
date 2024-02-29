@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="text/javascript" src="/eel.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Drag and Drop</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="button-side" id="buttonSide">
+      <button id="runButton" class="run-button">Run</button>
+      <button draggable="true" id="waitButton" class="wait-button">Wait</button>
+      <button draggable="true" id="commandButton" class="command-button">Command</button>
+      <button draggable="true" id="mouseButton" class="mouse-button">Mouse</button>
+      <button draggable="true" id="keyboardButton" class="keyboard-button">Keyboard</button>
+    </div>
+    <div class="block-side" id="blockSide" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <!-- Dropped buttons will be displayed here as blocks -->
+    </div>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <label id="modalLabel">Enter information:</label>
+      <input type="text" id="modalInput">
+      <button id="modalSubmit">Submit</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
